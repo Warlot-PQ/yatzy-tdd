@@ -65,7 +65,7 @@ public class YatzyTest {
     @ParameterizedTest
     public void handTest(YatzyHand hand, DiceThrow diceThrow, int scoreExpected) {
         // When
-        int actual = YatzyEngine.compureScore(hand, diceThrow);
+        int actual = YatzyEngine.computeScore(hand, diceThrow);
         // Then
         assertEquals(
             scoreExpected,
